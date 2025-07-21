@@ -6,28 +6,28 @@ import { Github, ExternalLink, Code2 } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Task Manager",
-      description: "A smart task management application that uses machine learning to predict task completion times and automatically prioritize tasks based on user behavior patterns.",
-      technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
-      githubUrl: "https://github.com/yourusername/ai-task-manager",
-      liveUrl: "https://ai-task-manager-demo.com",
-      features: ["Natural language processing", "Predictive analytics", "Real-time collaboration"]
+      title: "Student Expenses Tracker",
+      description: "A mobile app that helps students track their daily expenses with ease. Built using Flutter and Firebase, it features real-time updates and a user-friendly interface.",
+      technologies: ["Flutter", "Firebase", "Dart"],
+      githubUrl: "https://github.com/yourusername/student-expenses-tracker",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.example.expensetracker", // replace with actual
+      features: ["Daily expense logging", "Firebase authentication", "Real-time sync"]
     },
     {
-      title: "Cybersecurity Dashboard",
-      description: "A comprehensive security monitoring dashboard that analyzes network traffic, detects anomalies, and provides real-time threat assessment for enterprise environments.",
-      technologies: ["Python", "Django", "D3.js", "MongoDB", "Docker"],
-      githubUrl: "https://github.com/yourusername/security-dashboard",
-      liveUrl: "https://security-dashboard-demo.com",
-      features: ["Real-time monitoring", "Threat detection", "Custom alerts"]
+      title: "Blood Bridge",
+      description: "A cross-platform application connecting hospitals with nearby blood donors. Built with Flutter and Next.js, enabling real-time requests and donor notifications.",
+      technologies: ["Flutter", "Next.js", "Firebase", "Node.js"],
+      githubUrl: "https://github.com/yourusername/blood-bridge",
+      liveUrl: "https://bloodbridge.app", // replace with actual
+      features: ["Hospital-donor matching", "Notification system", "Cross-platform"]
     },
     {
-      title: "Social Learning Platform",
-      description: "A collaborative learning platform where students can share knowledge, participate in coding challenges, and work on group projects with integrated video conferencing.",
-      technologies: ["Node.js", "React", "Socket.io", "WebRTC", "MySQL"],
-      githubUrl: "https://github.com/yourusername/social-learning",
-      liveUrl: "https://social-learning-demo.com",
-      features: ["Video conferencing", "Code collaboration", "Progress tracking"]
+      title: "N-TRADERS Website",
+      description: "A responsive company website that showcases N-TRADERS' services and team. Built with React and styled for performance and modern aesthetics.",
+      technologies: ["React", "Tailwind CSS", "Vite"],
+      githubUrl: "https://github.com/yourusername/n-traders-website",
+      liveUrl: "https://ntraders.netlify.app", // replace with actual
+      features: ["Service showcase", "Team profiles", "Contact form"]
     }
   ];
 
@@ -39,36 +39,25 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my technical skills and problem-solving approach
+            A showcase of my technical skills and real-world problem solving
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="shadow-card hover:shadow-glow transition-spring hover:scale-105 group bg-gradient-card border-0 overflow-hidden relative">
-              {/* Gradient overlay */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity blur-2xl"></div>
               
               <CardHeader className="relative z-10">
                 <div className="flex items-start justify-between">
                   <Code2 className="h-8 w-8 text-tech-purple group-hover:text-tech-pink transition-colors mb-4" />
                   <div className="flex gap-2">
-                    <Button 
-                      variant="ghost" 
-                      size="icon"
-                      className="opacity-0 group-hover:opacity-100 transition-opacity"
-                      asChild
-                    >
+                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4" />
                       </a>
                     </Button>
-                    <Button 
-                      variant="ghost" 
-                      size="icon"
-                      className="opacity-0 group-hover:opacity-100 transition-opacity"
-                      asChild
-                    >
+                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4" />
                       </a>
@@ -80,8 +69,8 @@ const Projects = () => {
                   {project.description}
                 </CardDescription>
               </CardHeader>
+
               <CardContent className="space-y-4">
-                {/* Key Features */}
                 <div>
                   <h4 className="text-sm font-medium mb-2 text-muted-foreground">Key Features:</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
@@ -94,7 +83,6 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                {/* Technologies */}
                 <div>
                   <h4 className="text-sm font-medium mb-3 text-muted-foreground">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
@@ -106,7 +94,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
                   <Button variant="default" size="sm" asChild className="flex-1">
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -128,7 +115,7 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Nickkalulu" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
             </a>

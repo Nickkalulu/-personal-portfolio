@@ -17,8 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Basic validation
+
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Please fill in all required fields",
@@ -27,13 +26,11 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
     toast({
       title: "Message sent successfully!",
       description: "Thanks for reaching out. I'll get back to you soon."
     });
 
-    // Reset form
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
@@ -48,19 +45,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "ntechbrand@gmail.com",
+      href: "ntechbrand@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+265991526930",
       href: "tel:+15551234567"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "City, State, Country",
+      value: "Zomba, Malawi",
       href: null
     }
   ];
@@ -96,7 +93,6 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <Card className="shadow-card">
             <CardHeader>
               <CardTitle className="text-2xl">Send a Message</CardTitle>
@@ -131,7 +127,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
                   <Input
@@ -142,7 +138,7 @@ const Contact = () => {
                     placeholder="What would you like to discuss?"
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="message">Message *</Label>
                   <Textarea
@@ -163,9 +159,7 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          {/* Contact Information */}
           <div className="space-y-8">
-            {/* Contact Details */}
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="text-2xl">Contact Information</CardTitle>
@@ -189,7 +183,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Social Links */}
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="text-2xl">Connect Online</CardTitle>
@@ -218,7 +211,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Additional Info */}
             <Card className="shadow-card bg-gradient-subtle">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-3">Let's Work Together</h3>

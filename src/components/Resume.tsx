@@ -5,24 +5,33 @@ import { Download, Award, Briefcase, User } from "lucide-react";
 const Resume = () => {
   const experiences = [
     {
-      title: "Software Developer Intern",
-      company: "Tech Company Inc.",
-      period: "Summer 2023",
-      description: "Developed and maintained web applications using React and Node.js. Collaborated with senior developers on improving application performance and user experience."
+      title: "Flutter Developer",
+      company: "Student Project",
+      period: "2024",
+      description:
+        "Built a Student Expenses Tracker mobile application using Flutter and Firebase to help students track daily expenses efficiently."
     },
     {
-      title: "Teaching Assistant",
-      company: "University Computer Science Dept.",
-      period: "2022-2024",
-      description: "Assisted in teaching introductory programming courses. Conducted lab sessions and helped students with debugging and understanding core CS concepts."
+      title: "Full Stack Developer",
+      company: "Self-Initiated Project",
+      period: "2024",
+      description:
+        "Developed Blood Bridge, an application that connects hospitals with blood donors using Flutter for the frontend and Next.js for the backend."
+    },
+    {
+      title: "Frontend Web Developer",
+      company: "N-TRADERS",
+      period: "2025",
+      description:
+        "Currently building a modern company website for N-TRADERS using React, showcasing services and team information with a responsive UI."
     }
   ];
 
   const achievements = [
-    "Dean's List - 6 consecutive semesters",
-    "Winner - University Hackathon 2023",
-    "Outstanding Student in Computer Science Award",
-    "Published research paper on machine learning applications"
+    "Successfully launched two cross-platform applications (Flutter & Firebase)",
+    "Built a complete business website for N-TRADERS using React",
+    "Recognized for solving real-world problems with scalable solutions",
+    "Consistently improving UI/UX with performance-first approach"
   ];
 
   return (
@@ -93,19 +102,17 @@ const Resume = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Recent Computer Science graduate with strong foundation in software development, 
-              machine learning, and cybersecurity. Experienced in full-stack web development 
-              using modern technologies like React, Node.js, and Python. Passionate about 
-              creating innovative solutions and collaborating in team environments. 
-              Seeking opportunities to apply technical skills and contribute to impactful projects 
-              in the technology industry.
+              I am a Computer Scientist passionate about building practical solutions to real-world problems. 
+              With experience in mobile and web development using Flutter, Firebase, React, and Next.js, 
+              I specialize in full-stack projects that improve user experience and solve everyday challenges. 
+              I’m eager to join a team where I can grow and make impactful contributions.
             </p>
           </CardContent>
         </Card>
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Interested in working together? Let's connect!
+            Interested in working together? Let’s connect!
           </p>
           <Button 
             variant="default" 
